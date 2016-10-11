@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.codetribe.quizappremake.ResultsActivity"
+    android:orientation="vertical">
+
+    <Button
+        android:layout_width="54dp"
+        android:layout_height="48dp"
+        android:drawableLeft="@drawable/ic_home_black_24dp"
+        android:background="@color/colorAccent"
+        android:layout_gravity="right"
+        android:onClick="goToHome"/>
+
+    <ImageView
+        android:scaleType="fitCenter"
+        android:layout_width="match_parent"
+        android:layout_height="166sp"
+        android:src="@drawable/daily"/>
+    <TextView
+        android:id="@+id/total"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="42sp"
+        android:textColor="@android:color/holo_red_light"
+        android:textAlignment="center"
+        android:paddingTop="54dp"/>
+
+    <TextView
+        android:id="@+id/QuesRating"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="32sp"
+        android:textColor="@android:color/holo_red_light"
+        android:textAlignment="center"
+        android:paddingTop="32dp"/>
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+        android:paddingTop="42dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:numStars="5"
+        android:layout_gravity="center"
+        android:stepSize="0.5"
+        android:clickable="false"
+        android:isIndicator="true"/>
+</LinearLayout>
